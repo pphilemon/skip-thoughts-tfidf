@@ -37,10 +37,10 @@ classes_train = [row[1] for row in train_rows]
 f = open('test.csv')
 test_rows = [row for row in csv.reader(f)][1:]  # discard the first row
 try:
-    tweets_test = [row[0].decode('utf8') for row in train_rows]
+    tweets_test = [row[0].decode('utf8') for row in test_rows]
 except AttributeError:  # it's python 3
-    tweets_test = [row[0] for row in train_rows]
-classes_test = [row[1] for row in train_rows]
+    tweets_test = [row[0] for row in test_rows]
+classes_test = [row[1] for row in test_rows]
 
 # Define pipelines for skip-thougts and tf-idf
 pipeline_skipthought = Pipeline(steps=[('vectorizer', SkipThoughtsVectorizer()),
