@@ -1,3 +1,4 @@
+#import packages needed
 import skipthoughts
 import csv
 import random
