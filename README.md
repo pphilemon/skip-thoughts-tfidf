@@ -1,4 +1,5 @@
 # skip-thoughts-tfidf
+compare Skip-Thoughts vs Bag of Words approach
 Compare skip-thoughts vs TF-IDF bag of n-grams
 
 ## How to use this
